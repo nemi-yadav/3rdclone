@@ -1,0 +1,996 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    text-decoration: none !important;
+    list-style: none;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #303030;
+}
+
+.header-logo {
+    padding: 17px 0;
+    /* float: left; */
+}
+.header-menu{
+    text-align: center;
+}
+
+.header-text li {
+    font-family: 'oswald', serif;
+    padding: 0 0 0 53px;
+    font-size: 19px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.header-text ul {
+    display: flex;
+    justify-content: center;
+    padding-top: 36px;
+}
+
+.header-text a {
+    color: #fff;
+}
+
+.header-text a:hover {
+    color: #ff0000;
+    border-bottom: 1px solid #ff0000;
+}
+
+.header-sartch {
+    padding: 21px 0 0 0;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+}
+
+.input {
+    border-style: none;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    outline: none;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+    background-color: #303030;
+    /* box-shadow: 0px 0px 3px #f3f3f3; */
+    padding-right: 40px;
+    color: #fff !important;
+}
+
+.input::placeholder,
+.input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+
+.input::placeholder {
+    color: #ff0000;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    border-style: none;
+    border-radius: 50%;
+    pointer-events: painted;
+    background-color: transparent;
+    transition: .2s linear;
+}
+
+.icon:focus~.input,
+.input:focus {
+    box-shadow: none;
+    width: 250px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom: 3px solid #ff0000;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.beaner {
+    background-image: url(../img/baner.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 695px;
+}
+
+.beaner-in h1 {
+    font-size: 120px;
+    font-family: 'oswald', serif;
+    color: #fff;
+}
+
+.beaner-in p {
+    line-height: 33px;
+    font-size: 29px;
+    color: #fff;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.beaner-in {
+    padding: 311px 0 0 0;
+}
+
+.beaner-btn a {
+    font-family: 'oswald', serif;
+    font-size: 23px;
+    background-color: #e8631c;
+    padding: 8px 26px;
+    line-height: 51px;
+    color: #fff;
+}
+
+.beaner-btn a:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0px 0px 16px #ff0000;
+    border: 2px solid #000;
+    transition: 4s;
+}
+
+.beaner-btn {
+    padding-top: 8px;
+}
+
+.dance {
+    background-image: url(../img/content-one.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 917px;
+}
+
+.dance-tour h1 {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 700;
+    padding-top: 107px;
+    font-family: 'oswald', serif;
+    letter-spacing: 3px;
+    color: #fff;
+    padding-bottom: 28px;
+}
+
+.dance-tour p {
+    text-align: center;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.container-card img {
+    height: 310px;
+    width: 340px;
+}
+
+.card-bottom h1 {
+    font-size: 36px;
+    font-family: 'oswald', serif;
+    padding: 25px 0 0 0;
+    font-weight: 100;
+}
+
+.card-bottom p {
+    font-size: 21px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.card-bottom {
+    background-color: #303030;
+    height: 170px;
+    width: 340px;
+    margin-top: -3px;
+}
+
+.container-card {
+    padding-top: 59px;
+}
+
+.container-card img:hover {
+    transform: scale(0.98);
+}
+
+.pricing {
+    background-image: url(../img/pricing.png);
+    height: 718px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.pricing-text h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    padding-top: 77px;
+    font-family: 'oswald', serif;
+    letter-spacing: 3px;
+    color: #fff;
+    padding-bottom: 28px;
+}
+
+.pricing-text p {
+    text-align: center;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 17px;
+}
+
+.basic-card {
+    height: 336px;
+    width: 339px;
+    border-radius: 8px;
+    background-color: #ff5900;
+    margin-top: 49px;
+}
+
+i.fa.fa-mercury {
+    font-size: 133px;
+    color: #fff;
+    text-align: center;
+    display: flow;
+    padding-top: 26px;
+}
+
+.basic-card h1 {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 19px;
+    font-family: 'oswald', serif;
+}
+
+.basic-card p {
+    color: #fff;
+    text-align: center;
+    font-family: inherit;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+.basic-btn a {
+    background-color: #303030;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0 0 82px;
+    padding: 5px 0px;
+    width: 174px;
+    color: #fff;
+    border-radius: 7px;
+}
+
+.basic-btn a:hover {
+    background-color: #15ff00;
+    color: #000000;
+    border: 1px solid#000000;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.basic-card:hover {
+    transform: scale(1.05);
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.amazng-dance {
+    background-image: url(../img/amzing-dance.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 670px;
+}
+
+.amazing-text {
+    display: grid;
+    padding: 168px 22px 0 0px;
+    justify-content: end;
+}
+
+.amazing-text h1 {
+    font-size: 71px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 19px;
+    font-family: 'oswald', serif;
+}
+
+.amazing-text p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.amazing-text a {
+    background-color: #303030;
+    width: 38%;
+    padding: 8px 0;
+    text-align: center;
+    font-family: 'oswald', serif;
+    border-radius: 9px;
+    color: #fff;
+    margin-top: 19px;
+}
+
+.best-dance {
+    background-image: url(../img/best-dance.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 670px;
+}
+
+.best-text {
+    /* display: grid;  */
+    padding: 168px 22px 0 0px;
+    /* justify-content: end; */
+}
+
+.best-text h1 {
+    font-size: 71px;
+    color: #fff;
+    /* text-align: center; */
+    font-weight: 700;
+    padding-top: 19px;
+    font-family: 'oswald', serif;
+}
+
+.best-text p {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 100;
+}
+
+.best-text a {
+    background-color: #303030;
+    width: 38%;
+    padding: 8px 40px;
+    text-align: center;
+    font-family: 'oswald', serif;
+    border-radius: 9px;
+    color: #fff;
+    margin-top: 19px;
+}
+
+.text h1 {
+    font-size: 71px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 19px;
+    font-family: 'oswald', serif;
+}
+
+.celint {
+    background-color: #303030;
+    padding: 118px 0;
+}
+
+.clint-text {
+    display: grid;
+    justify-content: center;
+    color: #fff;
+}
+
+.text p {
+    text-align: center;
+    color: #fff;
+    font-size: 23px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    padding: 14px 0 100px 0;
+}
+
+.clint-text h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+.clint-text h3 {
+    font-weight: 100;
+}
+
+.herbit {
+    background-image: url(../img/harbit.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 970px;
+}
+
+.hearbet-in p {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 310px;
+    line-height: 57px;
+    font-family: 'Nunito', serif;
+}
+
+.hearbet-in h1 {
+    font-size: 58px;
+    text-align: center;
+    color: #fff;
+    font-family: 'oswald', serif;
+    text-transform: uppercase;
+    padding-top: 79px;
+}
+
+.subscribe {
+    background-image: url(../img/subsc.png);
+    background-size: 100% 100%;
+    height: 527px;
+    background-repeat: no-repeat;
+}
+
+.subs-in h1 {
+    font-size: 71px;
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 19px;
+    font-family: 'oswald', serif;
+    text-transform: uppercase;
+    padding-top: 112px;
+}
+
+.subs-in p {
+    text-align: center;
+    font-size: 29px;
+    font-weight: 100;
+    line-height: 34px;
+    padding: 30px 0;
+    color: #fff;
+}
+
+
+.subscribe-form {
+    --main-focus: #303030;
+    --font-color: #303030;
+    --font-color-sub: #aca9a9;
+    --bg-color: #ffffff;
+    --main-color: #323232;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    width: 520px;
+    height: 51px;
+    /* border-radius: 5px; */
+    /* box-shadow: 4px 4px var(--main-color); */
+}
+
+
+.subscribe-input {
+    width: 420px !important;
+    height: 100%;
+    padding: 5px 10px;
+    border: none;
+    border-right: 0;
+    border-radius: 0px 0 0 0px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--font-color);
+    background: var(--bg-color);
+}
+
+.subscribe-btn {
+    width: 100px;
+    height: 100%;
+    border: 2px solid var(--main-focus);
+    /* border-radius: 0 5px 5px 0; */
+    background-color: var(--main-focus);
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--bg-color);
+    font-family: 'oswald', serif;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.subscribe-input:focus {
+    outline: none;
+    /* border: 2px solid var(--main-focus); */
+    border-right: 0;
+}
+
+.sub-fom {
+    display: flex;
+    justify-content: center;
+}
+
+.futter {
+    background-color: #303030;
+    height: 388px;
+}
+
+#mussi h1 {
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family: 'oswald', serif;
+    color: #fff;
+    padding: 73px 0 20px 0;
+}
+
+#mussi p {
+    font-family: 'Montserrat', serif;
+    font-size: 22px;
+    color: #fff;
+    line-height: 29px;
+    padding: 0 0 10px 0;
+}
+
+#about h1 {
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family: 'oswald', serif;
+    color: #fff;
+    padding: 73px 0 20px 0;
+}
+
+#about li {
+    padding: 0px 0px 11px 0px;
+    margin: 0px 0px 0px -32px;
+}
+
+#about a {
+    color: #fff;
+}
+
+#about a:hover {
+    color: #ff0000;
+    font-size: 20px;
+    border-bottom: 1px solid #ff0000;
+}
+
+#mussi li {
+    display: contents;
+}
+
+#mussi ul {
+    display: contents;
+}
+
+#mussi a {
+    padding: 5px 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0px 4px;
+    color: #303030;
+    font-size: 24px;
+}
+
+#mussi a:hover {
+    color: #ff0000;
+    background-color: #15ff00;
+}
+
+
+
+
+
+
+/* ------------------------------------------responsiv 767-------------------------------------------- */
+
+
+@media only screen and (max-width: 767px) {
+    .header-text {
+        display: none;
+    }
+
+    .header-sartch {
+        display: none;
+    }
+
+    .header-logo img {
+        width: 44px;
+    }
+
+    .header-logo {
+        padding: 2px 0;
+    }
+
+    .beaner-in h1 {
+        font-size: 11px;
+        text-align: center;
+    }
+
+    .beaner-in {
+        padding: 11px 0 0 0;
+    }
+
+    .beaner-in p {
+        line-height: 13px;
+        font-size: 9px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .beaner-btn {
+        padding-top: 21px;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    .beaner-btn a {
+        font-size: 10px;
+        padding: 3px 10px;
+        line-height: 1px;
+    }
+
+    .beaner {
+        height: unset;
+    }
+
+    .dance-tour h1 {
+        font-size: 8px;
+        padding-top: 17px;
+        letter-spacing: 0px;
+        padding-bottom: 1px;
+    }
+
+    #resp {
+        display: none;
+    }
+
+    .container-card {
+        padding-top: 9px;
+    }
+
+    .container-card img {
+        /* height: 297px; */
+        width: 100%;
+    }
+
+    .card-bottom {
+        height: 90px;
+        width: 100%;
+        margin-bottom: 29px;
+    }
+
+    .card-bottom p {
+        font-size: 13px;
+    }
+
+    .dance {
+        height: unset;
+    }
+
+    .pricing-text h1 {
+        font-size: 24px;
+        padding-top: 12px;
+        letter-spacing: 1px;
+        padding-bottom: 0px;
+    }
+
+    .pricing-text p {
+        font-size: 17px;
+    }
+
+    i.fa.fa-mercury {
+        font-size: 69px;
+        padding-top: 13px;
+    }
+
+    .basic-card h1 {
+        font-size: 24px;
+        padding-top: 9px;
+    }
+
+    .basic-card p {
+        letter-spacing: 0px;
+    }
+
+    .basic-card {
+        height: unset;
+        width: unset;
+        margin-top: 0 auto;
+    }
+
+
+    .basic-btn a {
+        margin: 2px 0 15px 99px;
+        padding: 5px 0px 5px 0;
+        width: 84px;
+        display: inline-block;
+    }
+
+    #card-resp {
+        display: none;
+    }
+
+    .pricing {
+        height: auto;
+        padding-bottom: 27px;
+    }
+
+    .amazing-text {
+        padding: 0px 0px 0 144px;
+    }
+
+    .amazing-text h1 {
+        font-size: 16px;
+        padding-top: 4px;
+    }
+
+    .amazing-text p {
+        font-size: 7px;
+        text-align: center;
+    }
+
+    .amazing-text a {
+        width: 100%;
+        padding: 4px 0;
+        border-radius: 4px;
+        margin-top: 4px;
+        font-size: 9px;
+        margin-bottom: 17px;
+    }
+
+    .amazng-dance {
+        height: unset;
+    }
+
+    .best-text h1 {
+        font-size: 20px;
+        padding-top: 6px;
+    }
+
+    .best-text {
+        padding: 0px 22px 12px 0px;
+    }
+
+    .best-text p {
+        font-size: 7px;
+    }
+
+    .best-text a {
+        padding: 4px 20px;
+        font-size: 9px;
+    }
+
+    .best-dance {
+        height: unset;
+    }
+
+    .celint {
+        padding: 0px 0;
+    }
+
+    .text h1 {
+        font-size: 20px;
+        padding-top: 8px;
+    }
+
+    .text p {
+        font-size: 12px;
+        padding: 6px 0 0px 0;
+    }
+
+    .clint-text h2 {
+        font-size: 9px;
+    }
+
+    .clint-text h3 {
+        font-size: 9px;
+    }
+
+    .hearbet-in p {
+        font-size: 16px;
+        padding-top: 20px;
+        line-height: 23px;
+    }
+
+    .hearbet-in h1 {
+        font-size: 28px;
+        padding-top: 9px;
+        padding-bottom: 19px;
+    }
+
+    .herbit {
+        height: unset;
+    }
+
+    .subs-in h1 {
+        font-size: 28px;
+        padding-top: 13px;
+    }
+
+    .subs-in p {
+        font-size: 10px;
+        line-height: 14px;
+        padding: 0px 0;
+    }
+
+    .subscribe-input {
+        width: unset !important;
+        height: unset;
+    }
+
+    .subscribe-form {
+        width: unset;
+        height: unset;
+    }
+
+    .subscribe {
+        height: unset;
+    }
+
+    .sub-fom {
+        padding-bottom: 19px;
+    }
+
+    #mussi h1 {
+        font-size: 21px;
+        padding: 5px 0 10px 0;
+        text-align: center;
+    }
+
+    #mussi p {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0 0 5px 0;
+        text-align: center;
+    }
+
+    #mussi a {
+        display: none;
+    }
+
+    #about {
+        display: none;
+    }
+
+    .futter {
+        height: unset;
+    }
+}
+
+
+
+
+/* ------------------------------------------responsiv 1024-------------------------------------------- */
+
+
+@media only screen and (max-width: 1024px) {
+    .header-text {
+        display: none;
+    }
+
+    .header-sartch {
+        display: none;
+    }
+
+    .header-logo {
+        padding: 6px 0;
+    }
+
+    .beaner-in h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .beaner-in p {
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0px;
+    }
+
+    .beaner-btn {
+        text-align: center;
+        padding-top: 0px;
+        padding-bottom: 29px;
+    }
+
+    .beaner-btn a {
+        font-size: 10px;
+        padding: 7px 23px;
+        line-height: unset;
+    }
+
+    .beaner-in {
+        padding: 21px 0 0 0;
+    }
+
+    .beaner {
+        height: unset;
+    }
+
+    .dance-tour h1 {
+        font-size: 24px;
+        padding-top: 5px;
+        letter-spacing: 0px;
+        padding-bottom: 0px;
+    }
+
+    .dance-tour p {
+        font-size: 13px;
+    }
+
+    .container-card {
+        padding-top: 0px;
+    }
+
+    .container-card img {
+        height: auto;
+        width: 100%;
+    }
+
+    .card-bottom h1 {
+        font-size: 13px;
+    }
+
+    .card-bottom p {
+        font-size: 7px;
+    }
+
+    .card-bottom {
+        height: 80px;
+        width: 100%;
+    }
+    .pricing-text h1 {
+        font-size: 20px;
+        padding-top: 5px;
+        padding-bottom: 1px;
+    }
+    .pricing-text p {
+        font-size: 15px;
+    }
+    i.fa.fa-mercury {
+        font-size: 58px;
+        padding-top: 11px;
+    }
+    .basic-card h1 {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    .basic-card p {
+        font-size: 7px;
+        letter-spacing: 0px;
+        line-height: 9px;
+    }
+    .basic-btn a {
+        margin: 0 auto;
+        padding: 1px 0px;
+        width: 100%;
+    }
+    .basic-card {
+        height: unset;
+        width: 100%;
+        margin-top: 19px;
+    }
+    .basic-btn {
+        padding-bottom: 9px;
+        margin: 0 10px;
+    }
+    .amazing-text h1 {
+        font-size: 24px;
+        padding-top: 0px;
+    }
+}
